@@ -103,7 +103,10 @@ fetchSVGContent('word', (wordSvgContent) => {
 function removeContextMenu() {
   updateChat();
   contextMenu?.remove();
-  androidChat().removeEventListener("scroll", updateScroll)
+  const androidChatElement = androidChat();
+  if (androidChatElement) {
+    androidChatElement.removeEventListener("scroll", updateScroll);
+  }
 }
 
 function isWithin(x, y, classNames, func) {
