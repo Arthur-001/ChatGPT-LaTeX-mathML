@@ -22,7 +22,7 @@
   "content_scripts": [
     {
       "js": ["content.js"],
-      "matches": ["https://chatgpt.com/*", "https://*.wikipedia.org/*"]
+      "matches": ["https://chatgpt.com/*", "https://chat.deepseek.com/*", "https://*.wikipedia.org/*"]
     }
   ]
 }

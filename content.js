@@ -1,4 +1,4 @@
-let isChatGPT = location.host == "chatgpt.com";
+let isChatGPT = location.host == "chatgpt.com" || location.host == "chat.deepseek.com";
 let isAndroid = /(android)/i.test(navigator.userAgent);
 let isWindows = /(windows)/i.test(navigator.userAgent);
 const parser = new DOMParser();
